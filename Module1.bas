@@ -35,7 +35,7 @@ Sub TickerInformation()
         Ticker = ""
         UniqueIndex = 2
         
-        YearlyChange = 0
+        YearlyChange = 0 ' something
         YearlyPercent = 0
         TickerVolume = 0
         ClosingPrice = 0
