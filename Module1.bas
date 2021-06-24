@@ -13,38 +13,49 @@ Sub TickerInformation()
     For Each Worksheet In Worksheets
         Worksheet.Activate ' Mark work sheet as active for ActiveSheet methods.
         
+        ' This is an alternative to cells(row,column), I used range because it was quicker to reference the letter of the columns
         ' Set generated columns headers for every sheet
         Range("I1") = "<ticker>"
         Range("J1") = "<yearly change>"
         Range("K1") = "<percent change>"
         Range("L1") = "<total volume>"
+        
+        ' Set generated row headers for bonus table
         Range("N2") = "Greastest % Increase"
         Range("N3") = "Greatest % Decrease"""
         Range("N4") = "Greatest Total Volume"
         
         Dim LastRowA As Double '
-        LastRowA = Worksheet.Cells(Rows.Count, "A").End(xlUp).Row ' Determine the index of the last used row in column "A"
         
-        'Reset the variables for the new sheet
+        ' Determine the index of the last used row in column "A"
+        LastRowA = Worksheet.Cells(Rows.Count, "A").End(xlUp).Row
+        
+        ' Reset the variables for the new sheet
         
         Ticker = ""
         UniqueIndex = 2
-        OpeningPrice = 0
-        ClosingPrice = Range("F2")
+        
         YearlyChange = 0
         YearlyPercent = 0
         TickerVolume = 0
+        ClosingPrice = 0
+        
+        ' Set opening price for the first iteration
+        OpeningPrice = Range("F2")
         
         For i = 2 To LastRowA
             
+            ' Increase ticker volume for each iteration through the rows
             TickerVolume = TickerVolume + Range("G" & i).Value
+            
+            ' Make sure there is a positive value for opening price, if it is 0, continue to iterate until a value exists
             If OpeningPrice = 0 Then
             
                 OpeningPrice = Range("C" & i) 'Change open price to next unique ID
                 
             End If
             
-0
+            
             If Cells(i + 1, 1) <> Cells(i, 1) Then
                 
                 ' extract the unique name from Column A and put it into Column I
@@ -59,6 +70,7 @@ Sub TickerInformation()
                 Range("J" & UniqueIndex) = YearlyChange 'Populate yearly percent change
                 
                 ' Calculate yearly percent change
+                ' To prevent opening being 0
                 If OpeningPrice = 0 Then
                 
                     YearlyPercent = 0
@@ -70,7 +82,9 @@ Sub TickerInformation()
                 End If
                 
                 
+                
                 Range("K" & UniqueIndex) = YearlyPercent 'Populate yearly percent change
+                Range("K" & UniqueIndex).NumberFormat = "0.00%"
                 
                 ' Color code yearly change
                 If YearlyPercent > 0 Then
@@ -84,10 +98,12 @@ Sub TickerInformation()
                 'iterate UniqueIndex
                 UniqueIndex = UniqueIndex + 1
                 
-                'Reset ticker volume
+                ' Initializing ticker volume to 0 so each unique ticker can reset
+                ' Reset ticker volume
                 TickerVolume = 0
-                'Reset Opening Price
-                OpeningPrice = 0
+                
+                ' Update opening price for the next iteration.
+                OpeningPrice = Range("C" & i + 1)
                 
             End If
             
