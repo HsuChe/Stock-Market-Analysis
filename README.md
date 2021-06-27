@@ -148,17 +148,16 @@ We can now return the values we calculated from the if statement based on an ind
 
 ## Here are the results we obtained for each year starting with 2014 and ending in 2016
 
-* 2014 Summary page 1, get rest of the pages at [link](Images/2014_summary)<br>
-![2014](Images/2014 Summary/0001.jpg)
+* 2014 Summary page 1, get rest of the pages at [link](https://github.com/HsuChe/VBA_challenge/blob/e12b743317d4bd4271f2a3646d03661e0e8842d7/Images/2014_summary_single.pdf)<br>
 <br>
+Full summary table [here](https://github.com/HsuChe/VBA_challenge/blob/e12b743317d4bd4271f2a3646d03661e0e8842d7/Images/2014_summary.pdf)<br>
 <br>
-* 2015 Summary page 1, get rest of the pages at [link](Images/2015_summary.pdf)<br>
-![2015](Images/2015 Summary/0001.jpg)
+* 2015 Summary page 1, get rest of the pages at [link](https://github.com/HsuChe/VBA_challenge/blob/e12b743317d4bd4271f2a3646d03661e0e8842d7/Images/2015%20_summary_single.pdf)<br>
+Full summary table [here](https://github.com/HsuChe/VBA_challenge/blob/e12b743317d4bd4271f2a3646d03661e0e8842d7/Images/2015_summary.pdf)<br>
 <br>
+* 2016 Summary page 1, get rest of the pages at [link](https://github.com/HsuChe/VBA_challenge/blob/e12b743317d4bd4271f2a3646d03661e0e8842d7/Images/2016_summary_single.pdf)<br>
 <br>
-* 2016 Summary page 1, get rest of the pages at [link](Images/2015_summary.pdf)<br>
-![2016](Images/2014 Summary/0001.jpg)
-<br>
+Full summary table [here](https://github.com/HsuChe/VBA_challenge/blob/e12b743317d4bd4271f2a3646d03661e0e8842d7/Images/2016_summary.pdf)<br>
 <br>
 
 ## Bonus Questions
