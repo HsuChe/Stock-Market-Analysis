@@ -61,7 +61,7 @@ To generate unique names we iterated through each of the rows comparing the valu
 
 Some important variables we need to defined for the For loop are LastRowA, which will determine the last used cell in the column and set the range for our loop. The method I used is the following. 
 
-<a href="https://github.com/HsuChe/VBA_challenge"><strong>Code Credit »</strong></a>
+<a href="https://stackoverflow.com/questions/39470412/last-row-in-column-vba"><strong>Code Credit »</strong></a>
 
 * LastRowA
   ```sh
