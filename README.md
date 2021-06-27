@@ -166,6 +166,12 @@ We can now return the values we calculated from the if statement based on an ind
   Range("L" & UniqueCounter) = TotalVolume
   ```
 
+After TotalVolume is returned to the right column, it needs to be resetted for the next unique value
+
+```sh
+  TotalVolume = 0
+```
+
 ## Color code positive change and negative percent change on the summary table.
 
 The next step is to color code the positive yearly changes green and negative changes red.
@@ -259,3 +265,21 @@ We can now return the extracted data to the correct column and rows of the bonus
   Range("P4") = GreatestVolume
   ```
 
+## Looping through all the worksheets
+
+Now we can create a for loop for each worksheet in the workbook and generate both summary tables for each sheet.
+
+``` sh 
+For Each Worksheet In Worksheets
+  Worksheet.Activate
+
+  **Macro**
+
+Next Worksheet
+```
+
+The worksheet cycle will have to be at the beginning of the macro and it would need to reset all the variables for each worksheet to start anew. 
+
+# Conclusion
+
+This VBA homework assignment allows us to iterate through over 2 million rows of stocks and perform analysis on the information provided for this. This demonstrates the power of VBA to perform massive tasks while still keeping all the trappings of Microsoft Excel's GUI. It really is the best of both words. 
