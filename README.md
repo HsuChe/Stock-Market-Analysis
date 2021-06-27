@@ -187,19 +187,7 @@ The summary is divided to be the first page and the rest of the pages
 * 2014 Summary page 1, get rest of the pages at [link](https://github.com/HsuChe/VBA_challenge/blob/e12b743317d4bd4271f2a3646d03661e0e8842d7/Images/2014_summary.pdf)
 * 2015 Summary page 1, get rest of the pages at [link](https://github.com/HsuChe/VBA_challenge/blob/e12b743317d4bd4271f2a3646d03661e0e8842d7/Images/2015_summary.pdf)
 * 2016 Summary page 1, get rest of the pages at [link](https://github.com/HsuChe/VBA_challenge/blob/e12b743317d4bd4271f2a3646d03661e0e8842d7/Images/2016_summary.pdf)
-=======
-* 2014 Summary page 1, get rest of the pages at [link](https://github.com/HsuChe/VBA_challenge/blob/e12b743317d4bd4271f2a3646d03661e0e8842d7/Images/2014_summary_single.pdf)<br>
-<br>
-Full summary table [here](https://github.com/HsuChe/VBA_challenge/blob/e12b743317d4bd4271f2a3646d03661e0e8842d7/Images/2014_summary.pdf)<br>
-<br>
-* 2015 Summary page 1, get rest of the pages at [link](https://github.com/HsuChe/VBA_challenge/blob/e12b743317d4bd4271f2a3646d03661e0e8842d7/Images/2015%20_summary_single.pdf)<br>
-Full summary table [here](https://github.com/HsuChe/VBA_challenge/blob/e12b743317d4bd4271f2a3646d03661e0e8842d7/Images/2015_summary.pdf)<br>
-<br>
-* 2016 Summary page 1, get rest of the pages at [link](https://github.com/HsuChe/VBA_challenge/blob/e12b743317d4bd4271f2a3646d03661e0e8842d7/Images/2016_summary_single.pdf)<br>
-<br>
-Full summary table [here](https://github.com/HsuChe/VBA_challenge/blob/e12b743317d4bd4271f2a3646d03661e0e8842d7/Images/2016_summary.pdf)<br>
-<br>
->>>>>>> f6efc3d2569096d592efe10c2c8f2edbc0bc66b4
+
 
 ## Bonus Questions
 
