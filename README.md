@@ -75,7 +75,7 @@ To generate unique names we iterated through each of the rows comparing the valu
 
 Some important variables we need to defined for the For loop are LastRowA, which will determine the last used cell in the column and set the range for our loop. The method I used is the following. 
 
-<a href="https://github.com/HsuChe/VBA_challenge"><strong>Code Credit »</strong></a>
+<a href="https://stackoverflow.com/questions/39470412/last-row-in-column-vba"><strong>Code Credit »</strong></a>
 
 * LastRowA
   ```sh
@@ -181,11 +181,25 @@ The next step is to color code the positive yearly changes green and negative ch
 
 ## Here are the results we obtained for each year starting with 2014 and ending in 2016
 
+<<<<<<< HEAD
 The summary is divided to be the first page and the rest of the pages 
 
 * 2014 Summary page 1, get rest of the pages at [link](https://github.com/HsuChe/VBA_challenge/blob/e12b743317d4bd4271f2a3646d03661e0e8842d7/Images/2014_summary.pdf)
 * 2015 Summary page 1, get rest of the pages at [link](https://github.com/HsuChe/VBA_challenge/blob/e12b743317d4bd4271f2a3646d03661e0e8842d7/Images/2015_summary.pdf)
 * 2016 Summary page 1, get rest of the pages at [link](https://github.com/HsuChe/VBA_challenge/blob/e12b743317d4bd4271f2a3646d03661e0e8842d7/Images/2016_summary.pdf)
+=======
+* 2014 Summary page 1, get rest of the pages at [link](https://github.com/HsuChe/VBA_challenge/blob/e12b743317d4bd4271f2a3646d03661e0e8842d7/Images/2014_summary_single.pdf)<br>
+<br>
+Full summary table [here](https://github.com/HsuChe/VBA_challenge/blob/e12b743317d4bd4271f2a3646d03661e0e8842d7/Images/2014_summary.pdf)<br>
+<br>
+* 2015 Summary page 1, get rest of the pages at [link](https://github.com/HsuChe/VBA_challenge/blob/e12b743317d4bd4271f2a3646d03661e0e8842d7/Images/2015%20_summary_single.pdf)<br>
+Full summary table [here](https://github.com/HsuChe/VBA_challenge/blob/e12b743317d4bd4271f2a3646d03661e0e8842d7/Images/2015_summary.pdf)<br>
+<br>
+* 2016 Summary page 1, get rest of the pages at [link](https://github.com/HsuChe/VBA_challenge/blob/e12b743317d4bd4271f2a3646d03661e0e8842d7/Images/2016_summary_single.pdf)<br>
+<br>
+Full summary table [here](https://github.com/HsuChe/VBA_challenge/blob/e12b743317d4bd4271f2a3646d03661e0e8842d7/Images/2016_summary.pdf)<br>
+<br>
+>>>>>>> f6efc3d2569096d592efe10c2c8f2edbc0bc66b4
 
 ## Bonus Questions
 
