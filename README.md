@@ -73,7 +73,7 @@ To generate unique names we iterated through each of the rows comparing the valu
 
 ### Prerequisites
 
-Some important variables we need to define for the For loop are LastRowA, which will determine the last used cell in the column and set the range for our loop. The method I used is the following. 
+An important variable we need to define for the For loop is LastRowA, which will determine the last used cell in the column and set the range for our loop. The method I used is the following. 
 
 <a href="https://stackoverflow.com/questions/39470412/last-row-in-column-vba"><strong>Code Credit »</strong></a>
 
