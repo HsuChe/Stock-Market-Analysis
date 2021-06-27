@@ -293,4 +293,4 @@ UniqueIndex = 2
 
 # Conclusion
 
-This VBA homework assignment allows us to iterate through over 2 million rows of stocks and perform analysis on the information provided for this. This demonstrates the power of VBA to perform massive tasks while maintaining all the trappings of Microsoft Excel's GUI. It really is the best of both words. 
+This VBA homework assignment allows us to iterate through over 2 million rows of stocks and perform analysis on these information. This demonstrates the power of VBA to perform massive tasks while maintaining all the trappings of Microsoft Excel's GUI. It really is the best of both words. 
