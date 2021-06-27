@@ -5,7 +5,7 @@
   <h3 align="center">Stock Ticker Summary Table</h3>
 
   <p align="center">
-    An explaination for the creation of a summary table from ticker infor
+     An explanation for the creation of a summary table from ticker information
     <br />
     <a href="https://github.com/HsuChe/VBA_challenge"><strong>Project Github URL »</strong></a>
     <br />
@@ -20,10 +20,10 @@
 
 ![hero image](https://github.com/HsuChe/VBA_challenge/blob/8c86f907f10c59b6e711a9ca5ea35a34658f35d4/Images/hero_image.jpg.jpg)
 
-There is nothing more important to successful investment than to explore key business indicators and gauge growth for stocks. In this homework we are going to create a summary table for stock specifically from 2014, 2015, and 2016
+There is nothing more important to successful investment than to explore key business indicators and gauge growth for stocks. In this homework we are going to create a summary table for stock specifically from 2014, 2015, and 2016.
 
 Features of the dataset:
-* The dataset is divided primarily between three sheets for each of the years that are being analyzed, starting with 2014 and ending on 2016
+* The dataset is divided primarily between three sheets for each of the years that are being analyzed, starting with 2014 and ending on 2016.
 * The following are columns provided by the dataset: 
     * ticker name: **Name of the stock**
     * date: **Date the data originates**
@@ -32,7 +32,7 @@ Features of the dataset:
     * lowest price: **The lowest price the stock achieve that day**
     * closing price: **The final price before the market closes for the day**
     * trade volume: **The volume that the stock was traded for that day**
-* The dataset is orginized in alphabetical order where the same ticker name are listed one after another. 
+* The dataset is organized in alphabetical order where the same ticker name are listed one after another. 
 
 * Download Dataset click [HERE](https://github.com/HsuChe/VBA_challenge/blob/859645443db611a216dec442c8de9bc2721df457/Resources/Multiple_year_stock_data.xlsx)
 
@@ -45,8 +45,8 @@ The homework is interested generating a few specific items for the summary table
 
 ## Special Notes: 
 
-* I will be using Range() over Cells() in my calculations because it is easier for me to label a column as shown on excel rather than coiunting the columns each time.
-* I will be interating up for the conditional because I can set less values to ClosingPrice/OpeningPrice/TickerName if it is done this way.
+* I will be using Range() over Cells() in my calculations because it is easier for me to label a column as shown on excel rather than counting the columns each time
+* I will be iterating up for the conditional because I can set less values to ClosingPrice/OpeningPrice/TickerName if it is done this way.
 
 <!-- GETTING STARTED -->
 ## Obtaining list of unique ticker names and total volume traded.
@@ -73,7 +73,7 @@ To generate unique names we iterated through each of the rows comparing the valu
 
 ### Prerequisites
 
-Some important variables we need to defined for the For loop are LastRowA, which will determine the last used cell in the column and set the range for our loop. The method I used is the following. 
+Some important variables we need to define for the For loop are LastRowA, which will determine the last used cell in the column and set the range for our loop. The method I used is the following. 
 
 <a href="https://stackoverflow.com/questions/39470412/last-row-in-column-vba"><strong>Code Credit »</strong></a>
 
@@ -117,7 +117,7 @@ We can extract the opening price for the next unique ticker name by extracting t
   ...
   ```
 
-Due to the fact that our opening price will be extracted after the current iteration of unique value is calculated, we would have to calculate the price change year on year as well as the percentage change before updating a new opening price from the conditional.
+The fact that our opening price will be extracted after the current iteration of unique value is calculated, we would have to calculate the price change year on year as well as the percentage change before updating a new opening price from the conditional.
 
 * Store Yearly Change and Yearly Percent Change to memory
   ```sh
@@ -125,7 +125,7 @@ Due to the fact that our opening price will be extracted after the current itera
   ```
 
 ## Error checking for Opening Price to calculate percentage change year on year.
-If yearly percent change uses an opening price that is 0, will draw an error for our calculation. We have to set exceptions for when opening price is 0 on hte first iteration of a unique ticker.
+If yearly percent change uses an opening price that is 0, will draw an error for our calculation. We must set exceptions for when opening price is 0 on the first iteration of a unique ticker.
 
 To do this, we would need to insert two different error checkers: 
 
@@ -156,9 +156,9 @@ After the calculation is done, we can go ahead and update the opening price for 
 
 ## Returning all values to the correct column
 
-We can now return the values we calculated from the if statement based on an index specifically desginated for our summary table.
+We can now return the values we calculated from the if statement based on an index specifically designated  for our summary table.
 
-* Return Values to their rightful index in the summary table 
+* Return Values to their rightful index in the summary table
   ```sh
   Range("I" & UniqueCounter) = TickerName
   Range("J" & UniqueCounter) = YearlyChange
@@ -168,7 +168,7 @@ We can now return the values we calculated from the if statement based on an ind
   Range("K" & UniqueIndex).NumberFormat = "0.00%"
   ```
 
-After TotalVolume is returned to the right column, it needs to be resetted for the next unique value and we can update UniqueIndex to make sure the next update on our summary table is in the right cell
+After TotalVolume is returned to the right column, it needs to be resetted for the next unique value and we can update UniqueIndex to make sure the next update on our summary table is in the right cell.
 
 ```sh
   TotalVolume = 0
@@ -190,7 +190,6 @@ The next step is to color code the positive yearly changes green and negative ch
 
 ## Here are the results we obtained for each year starting with 2014 and ending in 2016
 
-<<<<<<< HEAD
 The summary is divided to be the first page and the rest of the pages 
 
 * 2014 Summary page 1, get rest of the pages at [link](https://github.com/HsuChe/VBA_challenge/blob/e12b743317d4bd4271f2a3646d03661e0e8842d7/Images/2014_summary.pdf)
@@ -294,4 +293,4 @@ UniqueIndex = 2
 
 # Conclusion
 
-This VBA homework assignment allows us to iterate through over 2 million rows of stocks and perform analysis on the information provided for this. This demonstrates the power of VBA to perform massive tasks while still keeping all the trappings of Microsoft Excel's GUI. It really is the best of both words. 
+This VBA homework assignment allows us to iterate through over 2 million rows of stocks and perform analysis on the information provided for this. This demonstrates the power of VBA to perform massive tasks while maintaining all the trappings of Microsoft Excel's GUI. It really is the best of both words. 
