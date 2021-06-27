@@ -164,12 +164,15 @@ We can now return the values we calculated from the if statement based on an ind
   Range("J" & UniqueCounter) = YearlyChange
   Range("K" & UniqueCounter) = YearlyPercent
   Range("L" & UniqueCounter) = TotalVolume
+  ' format percent '
+  Range("K" & UniqueIndex).NumberFormat = "0.00%"
   ```
 
-After TotalVolume is returned to the right column, it needs to be resetted for the next unique value
+After TotalVolume is returned to the right column, it needs to be resetted for the next unique value and we can update UniqueIndex to make sure the next update on our summary table is in the right cell
 
 ```sh
   TotalVolume = 0
+  UniqueIndex = UniqueIndex + 1
 ```
 
 ## Color code positive change and negative percent change on the summary table.
@@ -279,6 +282,15 @@ Next Worksheet
 ```
 
 The worksheet cycle will have to be at the beginning of the macro and it would need to reset all the variables for each worksheet to start anew. 
+
+``` sh
+Ticker = ""
+YearlyChange = 0
+YearlyPercent = 0
+TickerVolume = 0
+ClosingPrice = 0
+UniqueIndex = 2
+```
 
 # Conclusion
 

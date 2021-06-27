@@ -1,6 +1,7 @@
 Attribute VB_Name = "Module1"
 Sub TickerInformation()
-
+    
+    ' set the variables that we will need to put values into memory
     Dim Ticker As String
     Dim UniqueIndex As Double
     Dim OpeningPrice As Double
@@ -31,17 +32,17 @@ Sub TickerInformation()
         
         ' Create a variable for the last used row of column A
         Dim LastRowA As Double
-        
-        ' Set value for the last used row for column A
         LastRowA = Worksheet.Cells(Rows.Count, "A").End(xlUp).Row
         
         ' Reset the variables for the new sheet
         Ticker = ""
-        UniqueIndex = 2
         YearlyChange = 0
         YearlyPercent = 0
         TickerVolume = 0
         ClosingPrice = 0
+        
+        ' set summary table index to start at 2
+        UniqueIndex = 2
         
         ' Set opening price for the first iteration because the for loop will be taking the last iteration of each unique variable.
         OpeningPrice = Range("F2")
@@ -52,6 +53,7 @@ Sub TickerInformation()
             ' Increase ticker volume for each iteration through the rows, value will be returned to column L when conditional loop triggers
             TickerVolume = TickerVolume + Range("G" & i).Value
             
+            ' OpeningPrice error checker 1
             ' We need to make sure that the opening price from the conditional loop is not 0, if it is 0, then we will set a new opening price the first time it is not 0
             If OpeningPrice = 0 Then
             
@@ -66,18 +68,15 @@ Sub TickerInformation()
                 
                 ' Extract ticker name from column A to be returned to Column I
                 Ticker = Range("A" & i)
-                ' Populate Column I with ticker.
-                Range("I" & UniqueIndex) = Range("A" & i) ' populate column I with unique ticker
                 
                 ' Pull the closing price from the current index i to be used in calculation for change year on year
                 ClosingPrice = Range("F" & i) ' pull closing price
                 
                 ' Calculate the yearly change for the ticker.
                 YearlyChange = ClosingPrice - OpeningPrice
-                ' Return YearlyChange to Column J
-                Range("J" & UniqueIndex) = YearlyChange
                 
                 ' Calculate yearly percent change
+                ' OpeningPrice error check 2
                 ' Test to see if Opening Price is 0 if the entire ticker has 0 for opening price, which will slip pass the first test
                 If OpeningPrice = 0 Then
                     
@@ -91,30 +90,33 @@ Sub TickerInformation()
                 
                 End If
                 
+                ' Update opening price for the next iteration. The value will be fed back into the for loop.
+                OpeningPrice = Range("C" & i + 1)
                 
+                
+                ' Populate Column I with ticker.
+                Range("I" & UniqueIndex) = Range("A" & i) ' populate column I with unique ticker
+                ' Return YearlyChange to Column J
+                Range("J" & UniqueIndex) = YearlyChange
                 ' Return YearlyPercent to column K
                 Range("K" & UniqueIndex) = YearlyPercent
                 ' Format column k to percent with 2 decimal places
                 Range("K" & UniqueIndex).NumberFormat = "0.00%"
+                'Return total volume to column L
+                Range("L" & UniqueIndex) = TickerVolume
                 
                 ' Color code yearly change
-                If YearlyPercent > 0 Then
+                If YearlyChange > 0 Then
                     Range("J" & UniqueIndex).Interior.ColorIndex = 4
                 Else
                     Range("J" & UniqueIndex).Interior.ColorIndex = 3
                 End If
-                
-                'Return total volume to column L
-                Range("L" & UniqueIndex) = TickerVolume
                 
                 ' Iterate UniqueIndex to track the current index in the summary table.
                 UniqueIndex = UniqueIndex + 1
                 
                 ' Initializing ticker volume to 0 so each unique ticker can reset
                 TickerVolume = 0
-                
-                ' Update opening price for the next iteration. The value will be fed back into the for loop.
-                OpeningPrice = Range("C" & i + 1)
                 
             End If
             
