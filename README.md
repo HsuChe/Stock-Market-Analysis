@@ -34,7 +34,7 @@ Features of the dataset:
     * trade volume: **The volume that the stock was traded for that day**
 * The dataset is orginized in alphabetical order where the same ticker name are listed one after another. 
 
-* Download Dataset click [HERE]()
+* Download Dataset click [HERE](https://github.com/HsuChe/VBA_challenge/blob/859645443db611a216dec442c8de9bc2721df457/Resources/Multiple_year_stock_data.xlsx)
 
 The homework is interested generating a few specific items for the summary table.
 
