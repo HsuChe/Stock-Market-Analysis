@@ -188,15 +188,6 @@ The next step is to color code the positive yearly changes green and negative ch
   End If
 ```
 
-## Here are the results we obtained for each year starting with 2014 and ending in 2016
-
-The summary is divided to be the first page and the rest of the pages 
-
-* 2014 Summary page 1, get rest of the pages at [link](https://github.com/HsuChe/VBA_challenge/blob/e12b743317d4bd4271f2a3646d03661e0e8842d7/Images/2014_summary.pdf)
-* 2015 Summary page 1, get rest of the pages at [link](https://github.com/HsuChe/VBA_challenge/blob/e12b743317d4bd4271f2a3646d03661e0e8842d7/Images/2015_summary.pdf)
-* 2016 Summary page 1, get rest of the pages at [link](https://github.com/HsuChe/VBA_challenge/blob/e12b743317d4bd4271f2a3646d03661e0e8842d7/Images/2016_summary.pdf)
-
-
 ## Bonus Questions
 
 The bonus questions asked to find 3 additional calculations. These calculations are the ticker name of the greatest percent increase and the percentage value, the ticker name of the greatest percent decrease and the percentage value, and ticker name of the largest total traded volume in the year and the traded value.
@@ -290,6 +281,15 @@ TickerVolume = 0
 ClosingPrice = 0
 UniqueIndex = 2
 ```
+
+## Here are the results we obtained for each year starting with 2014 and ending in 2016
+
+The summary is divided to be the first page and the rest of the pages 
+
+* 2014 Summary table at [link](https://github.com/HsuChe/VBA_challenge/blob/803099075c2e4acfb71e760a7eb35840daa483a3/Images/2014_summary.pdf)
+* 2015 Summary table at [link](https://github.com/HsuChe/VBA_challenge/blob/803099075c2e4acfb71e760a7eb35840daa483a3/Images/2015_summary.pdf)
+* 2016 Summary table at [link](https://github.com/HsuChe/VBA_challenge/blob/803099075c2e4acfb71e760a7eb35840daa483a3/Images/2016_summary.pdf)
+
 
 # Conclusion
 
