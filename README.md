@@ -84,7 +84,7 @@ An important variable we need to define for the For loop is LastRowA, which will
 
 We also need to generate the needed headers for the columns that our calculations will return to.
 
-* LastRowA
+* Headers for generated columns
   ```sh
   Range("I1") = "<ticker>"
   Range("J1") = "<yearly change>"
