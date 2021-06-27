@@ -18,7 +18,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-![hero image](https://github.com/HsuChe/VBA_challenge/blob/master/Images/hero_image.jpg?)
+![hero image](![hero image](https://github.com/HsuChe/VBA_challenge/blob/8c86f907f10c59b6e711a9ca5ea35a34658f35d4/Images/hero_image.jpg.jpg))
 
 There is nothing more important to successful investment than to explore key business indicators to gauge growth for stocks. In this homework we are going to create a summary table for stock products specifically from 2014, 2015, and 2016
 
