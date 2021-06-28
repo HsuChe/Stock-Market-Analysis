@@ -286,8 +286,11 @@ UniqueIndex = 2
 
 The summary is divided to be the first page and the rest of the pages 
 
+* ![2014_single](https://github.com/HsuChe/VBA_challenge/blob/c9e2a66ad51906119fdb7dd9c91a165e5e314473/Images/2014_sample.JPG)
 * 2014 Summary table at [link](https://github.com/HsuChe/VBA_challenge/blob/803099075c2e4acfb71e760a7eb35840daa483a3/Images/2014_summary.pdf)
+* ![2015_single](https://github.com/HsuChe/VBA_challenge/blob/c9e2a66ad51906119fdb7dd9c91a165e5e314473/Images/2015_sample.JPG)
 * 2015 Summary table at [link](https://github.com/HsuChe/VBA_challenge/blob/803099075c2e4acfb71e760a7eb35840daa483a3/Images/2015_summary.pdf)
+* ![2016_single](https://github.com/HsuChe/VBA_challenge/blob/c9e2a66ad51906119fdb7dd9c91a165e5e314473/Images/2016_sample.JPG)
 * 2016 Summary table at [link](https://github.com/HsuChe/VBA_challenge/blob/803099075c2e4acfb71e760a7eb35840daa483a3/Images/2016_summary.pdf)
 
 
